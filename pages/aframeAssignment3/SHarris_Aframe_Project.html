@@ -3,15 +3,72 @@
   <head>
       <title>SHarris Aframe Project 3</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script> <!--Currently Not Using This. May Change-->
+    <script src="js/components/camera-position.js"></script>
   </head>
 
   <body>
-    <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#0041ce"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+    <a-scene
+      background="color: #AAB"
+      fog="type: linear; color: #1A0838; near: 0; far: 10"
+      >
+
+      
+      <a-entity environment=
+      "skyType: gradient; 
+      skyColor: #170632; 
+      horizonColor: #2A2568; 
+
+      ground: canyon;
+      groundYScale: 30;
+      groundTexture: walkernoise; 
+      groundColor: #8B005D; 
+      groundColor2: #CB0777; 
+
+      dressing: pyramids;
+      dressingScale: 1;
+      dressingAmount: 100;
+      dressingVariance: 1 2 1; 
+      dressingUniformScale: false;
+      dressingColor: #4A0150;
+
+      shadow: true;
+      ">
+    </a-entity>
+      
+    <!--CAMERA SECTION-->
+    <a-entity position = "0 0 10" rotation = "20 0 0"> <!-- This changes the position and hangle of the camera-->
+      <a-camera active = "true">
+      </a-camera>
+    </a-entity>
+
+    <!--HIGHLIGHT-->
+    <a-entity light="color: #A371C6; intensity: 1.5" position="0 -10 0"></a-entity>
+
+
+    <!--CENTER ROTATING PYRAMID-->
+    <a-octahedron position="0 12 -12" 
+                  rotation = "0 45 180" 
+                  color="#9F0A6E" 
+                  radius="6"
+                  animation="property: rotation;
+                          to: 0 360 180;
+                          loop: true;
+                          dur: 5000;
+                          easing: linear">
+                </a-octahedron>
+
+    <!--CONTENT SECTION-->
+    
+    <!-- <a-plane position="0 0 -4" 
+              rotation="-90 0 0" 
+              width="500" 
+              height="500" 
+              color="#C2016E">
+      </a-plane> -->
+    <a-sky color="#ECECEC"></a-sky>
+
+
     </a-scene>
     
   </body>
