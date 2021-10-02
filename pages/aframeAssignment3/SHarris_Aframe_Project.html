@@ -1,23 +1,22 @@
-<<!doctype html>
+<!doctype html>
     <html>
   <head>
-      <title>SHarris Aframe Project 3</title>
+    <title>SHarris Aframe Project 3</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script> <!--Currently Not Using This. May Change-->
+    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
     <script src="js/components/camera-position.js"></script>
   </head>
 
   <body>
-    <a-scene
-      background="color: #AAB"
-      fog="type: linear; color: #1A0838; near: 0; far: 10"
-      >
+    <a-scene>
 
-      
+      <!--ENVIROMENT SECTION-->
       <a-entity environment=
       "skyType: gradient; 
       skyColor: #170632; 
       horizonColor: #2A2568; 
+      lighting: point;
+      lightPosition: 1 10 100;
 
       ground: canyon;
       groundYScale: 30;
@@ -33,16 +32,18 @@
       dressingColor: #4A0150;
 
       shadow: true;
-      ">
+      shadowSize: 2;">
     </a-entity>
       
+
     <!--CAMERA SECTION-->
-    <a-entity position = "0 0 10" rotation = "20 0 0"> <!-- This changes the position and hangle of the camera-->
+    <a-entity position = "0 0 7" rotation = "20 0 0"> <!-- This changes the position and hangle of the camera-->
       <a-camera active = "true">
       </a-camera>
     </a-entity>
 
-    <!--HIGHLIGHT-->
+
+    <!--HIGHLIGHT FOR PYRAMID-->
     <a-entity light="color: #A371C6; intensity: 1.5" position="0 -10 0"></a-entity>
 
 
@@ -55,21 +56,27 @@
                           to: 0 360 180;
                           loop: true;
                           dur: 5000;
-                          easing: linear">
-                </a-octahedron>
+                          easing: linear"
+                  light="color: #DDDDFF; distance: 120; intensity: 1; type: point"></a-octahedron>>
+                          
+      </a-octahedron>
 
-    <!--CONTENT SECTION-->
-    
-    <!-- <a-plane position="0 0 -4" 
-              rotation="-90 0 0" 
-              width="500" 
-              height="500" 
-              color="#C2016E">
-      </a-plane> -->
-    <a-sky color="#ECECEC"></a-sky>
 
+      <!-- SMALL RING -->
+      <a-ring color="#78d1fa" 
+                    radius-inner="6" 
+                    radius-outer="6.5"
+                    position="0 13 -15">
+        </a-ring>
+
+        
+        <!-- LARGE RING -->
+        <a-ring color="#78d1fa" 
+                    radius-inner="20" 
+                    radius-outer="20.5"
+                    position="0 13 -15">
+        </a-ring>
 
     </a-scene>
-    
   </body>
 </html>
