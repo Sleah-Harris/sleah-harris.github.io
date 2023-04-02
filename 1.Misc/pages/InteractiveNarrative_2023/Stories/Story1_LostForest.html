@@ -77,13 +77,14 @@ You don’t  recall who you are… How did you get here? What were you aiming fo
 All you know is you were walking before consciousness, searching for something though you cannot recall what. 
 
 [[Continue|Start]]</tw-passagedata><tw-passagedata pid="3" name="Go to Lake" tags="" position="1200,500" size="100,100"> (if: $spriteAccquired is 1)[
-After a while, the sprite manages to lead you to the coast of a Crystal Lake. Its shining waters reflecting the overcast light of the sky in subtle rainbows as it washes against the sanded beach. 
+After a while, the sprite manages to lead you to the coast of a Crystal Lake. Its shining waters reflect the overcast light of the sky in subtle rainbows as it washes against the sanded beach. 
 
 The sprite settles on your shoulder, looking over the lake for a moment before it smiles, sets a chilled hand on your shoulder, and melds into your body.
 
-Though suprised at first, as the ice runs through your veins, you find that you feel more whole, recalling things you&#39;d long forgotten. 
+Though surprised at first, as the ice runs through your veins, you find that you feel more whole, recalling things you&#39;d long forgotten. 
 
-This lake was were you needed to be.
+This lake was where you needed to be.
+
 
 [[Continue|Approach Lake Success]]
 
@@ -116,22 +117,21 @@ Choice:
 
 Choice: 
 [[Walk Back]]
-[[Walk Forward]]</tw-passagedata><tw-passagedata pid="7" name="Dance with Spirits" tags="" position="900,650" size="100,100">Curious of their dance, you approach the ring of lights and are quickly swept into the lull of their dance. 
+[[Walk Forward]]</tw-passagedata><tw-passagedata pid="7" name="Dance with Spirits" tags="" position="900,650" size="100,100">Curious about their dance, you approach the ring of lights and are quickly swept into the lull of their dance. 
 
 [[Spin |Dance 1]]
 
 </tw-passagedata><tw-passagedata pid="8" name="Talk to Lone Sprite" tags="" position="750,825" size="100,100">You approach the lone sprite, holding your hand to it when you draw near. 
 
-Though hesitant at first, the little sprite accepts your offer, setting one of its many delicate feet on your palm. You wince as biting frost forms on your skin but the spread slows as your body adjusts to the creature&#39;s magic. 
+Though hesitant at first, the little sprite accepts your offer, setting one of its many delicate feet on your palm. You wince as biting frost forms on your skin, but the spread slows as your body adjusts to the creature&#39;s magic. 
 
 [[&quot;Hello?&quot;|Speak to Spirit]] </tw-passagedata><tw-passagedata pid="9" name="Ignore Sprites" tags="" position="600,700" size="100,100">You choose to ignore the spirits. Suspecting their foul nature may lead to your demise if you heed their calls. 
 
-[[Continue|Continue Walking (Sprite)]]</tw-passagedata><tw-passagedata pid="10" name="Continue Walking (Sprite)" tags="" position="600,825" size="100,100">After some time of walking, you notice the lone spirit from before is following you from a distance. It ducks behind a nearby pine when it realizes it&#39;s been spotted. 
+[[Continue|Continue Walking (Sprite)]]</tw-passagedata><tw-passagedata pid="10" name="Continue Walking (Sprite)" tags="" position="600,825" size="100,100">After some time walking, you notice the lone spirit from before is following you from a distance. It ducks behind a nearby pine when it realizes it&#39;s been spotted. 
 
 Choice: 
 [[Speak to Spirit|Talk to Lone Sprite]]
-[[Continue Walking]] </tw-passagedata><tw-passagedata pid="11" name="Speak to Spirit" tags="" position="750,975" size="100,100">Your voice feels foreign as you speak for what feels to be the first time. 
-However, it seems effective enough, as the sprite perks at the noise and leans forward to watch you closer. 
+[[Continue Walking]] </tw-passagedata><tw-passagedata pid="11" name="Speak to Spirit" tags="" position="750,975" size="100,100">However, it seems compelling enough as the sprite perks at the noise and leans forward to watch you closely. 
 
 [[&quot;Do you need something?|Speak to Spirit 2]]
 
@@ -140,7 +140,7 @@ However, it seems effective enough, as the sprite perks at the noise and leans f
 
 [[Continue Walking]] </tw-passagedata><tw-passagedata pid="13" name="Walk Back" tags="" position="200,825" size="100,100">Walking back serves only to confuse you more. Though you thought you were moving south, minutes later, you find yourself in a similar clearing to where you first started. Why were you walking?
 
-You start to question what brought  you here.
+You start to question what brought you here.
 
 (if: (history:) contains &quot;Continue Forward&quot;)[[[Continue Walking|Continue Till Lost]]
 ](else:)[
@@ -179,15 +179,15 @@ width=&quot;600&quot;&gt;
 (link: &quot;Restart&quot;)[(reload:)]</tw-passagedata><tw-passagedata pid="18" name="Go to Lake 2" tags="" position="1200,625" size="100,100">After hours, the lake is still no closer. It feels as if you&#39;ve done nothing but walk in place for all this time. 
 
 [[Go Back]]
-[[Continue Forward|Continue Forward (Lake)]]</tw-passagedata><tw-passagedata pid="19" name="Go Back" tags="" position="1125,750" size="100,100">Turning back leads you down the same path you followed. The trees are endless an you encounter the same set of frozen rocks at least dozen more times before you stop to rest. 
+[[Continue Forward|Continue Forward (Lake)]]</tw-passagedata><tw-passagedata pid="19" name="Go Back" tags="" position="1125,750" size="100,100">Turning back leads you down the same path you followed. The trees are endless and you encounter the same set of frozen rocks at least a dozen more times before you stop to rest.  
 
 (if: (history:) contains &quot;Continue Forward (Lake)&quot;)[[[Continue|Continue Till Lost (Lake)]]]
-(else:)[[[Continue|Continue Forward (Lake)]]]</tw-passagedata><tw-passagedata pid="20" name="Continue Forward (Lake)" tags="" position="1275,750" size="100,100">You chase after the Lake with renewed effort. However, your passion quickly fizzles as your feet tire and the lake stays static in the horizon.
+(else:)[[[Continue|Continue Forward (Lake)]]]</tw-passagedata><tw-passagedata pid="20" name="Continue Forward (Lake)" tags="" position="1275,750" size="100,100">You chase after the Lake with renewed effort. However, your passion quickly fizzles as your feet tire and the lake stays static on the horizon.
 
 (if: (history:) contains &quot;Go Back&quot;)[[[Continue|Continue Till Lost (Lake)]]]
 (else:)[[[Continue|Go Back]]]</tw-passagedata><tw-passagedata pid="21" name="Continue Till Lost (Lake)" tags="" position="1200,875" size="100,100">In the end, the Lake remains so close but yet so far. 
 
-Your thoughts wander to memories long lost and you start to lose track of why you were walking the first palce. 
+Your thoughts wander to memories long lost and you start to lose track of why you were walking in the first place. 
 
 &lt;img 
 src=&quot;https://i.pinimg.com/736x/c8/23/32/c8233279cd25c2c15118f19a135e3cc3.jpg&quot; 
@@ -207,16 +207,18 @@ You take a drink and find that you feel halfway whole.
 =&gt;&lt;=
 ###Ending #4: Half Found
 =&gt;&lt;=
-(link: &quot;Restart&quot;)[(reload:)]</tw-passagedata><tw-passagedata pid="23" name="Speak to Spirit 2" tags="" position="750,1125" size="100,100">The sprite shakes its head, pauses, changes its mind to nod instead. 
+(link: &quot;Restart&quot;)[(reload:)]</tw-passagedata><tw-passagedata pid="23" name="Speak to Spirit 2" tags="" position="750,1125" size="100,100">The sprite shakes its head, pauses, and changes its mind to nod. 
 
-Lifting from your palm, it hovers in place, examining you closely before it waves a set of arms and spins to towards the West. Before floating too far, it stops to look back and motions you follow.
+Lifting from your palm, it hovers in place, examining you closely before it waves a set of arms and spins towards the West. Before floating too far, it stops to look back and motions you follow.
+
 
 [[Don&#39;t Follow]]
-[[Follow Sprite]] </tw-passagedata><tw-passagedata pid="24" name="Don&#39;t Follow" tags="" position="600,1000" size="100,100">Deciding against following such a pesky creature, you instead turn and continue on your treak deeper into the forest. 
+[[Follow Sprite]] </tw-passagedata><tw-passagedata pid="24" name="Don&#39;t Follow" tags="" position="600,1000" size="100,100">Deciding against following such a pesky creature, you instead turn and continue on your trek deeper into the forest. 
 
 [[Continue|Continue Walking]] </tw-passagedata><tw-passagedata pid="25" name="Follow Sprite" tags="" position="975,1125" size="100,100">Caught off guard by such docile behavior from a typically territorial species, you decide to follow the sprite.
 
-The trek is slow as you struggle through deep banks of snow, but each time the sprite pauses and offers its assistance where it can. Othertimes the creature hovers in place nearby and watch you through blank eyes. 
+The trek is slow as you struggle through deep banks of snow, but each time the sprite pauses and offers its assistance where it can. Other times the creature hovers in place nearby and watch you through blank eyes.
+
 
 (set: $spriteAccquired to 1)
 [[Continue|Go to Lake]] </tw-passagedata></tw-storydata>
